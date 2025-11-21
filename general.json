@@ -1,0 +1,60 @@
+{
+    "system": true,
+    "definition": {
+        "functionsTicket": {
+            "notifyuser": true,
+            "assumir": true,
+            "call": true,
+            "renomear": true,
+            "gerenciar": true,
+            "motivo": true
+        },
+        "channels": {
+            "logs": "1428531678611116052",
+            "feedback": "1346255616586420309",
+            "category": "1359156633963462656"
+        },
+        "role": "1346255863429730404"
+    },
+    "panel": {
+        "mensagem": {
+            "content": false,
+            "embeds": {
+                "title": "** Carol Store – Estilo, Elegância e Atitude! **",
+                "desc": "Bem-vindo á** Central de Atendimento**.  Aqui, Você Pode abrir um ticket para obter  **Suporte**\nOu **Nos **Dizer em como deseja suas **Peças**\n\n`NOSSOS TRABALHOS`\n-   ** Roupas femininas e masculinas**\n-  ** Looks personalizados e exclusivos**\n- **Roupas para eventos, festas e roleplays**\n- ** Pronta entrega e encomendas sob medida**\n- **Texturas de luxo e modelagem realista**\n\n**⏰ ・Horário De Atendimento:**\nDe Segunda a Sábado, das** 13:30** as** 23:00**, e ** Sempre Que Disponível**",
+                "banner": null,
+                "cor": "#FF1493"
+            },
+            "msg": {
+                "content": "Não Definido",
+                "banner": null
+            }
+        },
+        "functions": {
+            "Compras": {
+                "predesc": "Motivo ?",
+                "desc": "Não Definido",
+                "banner": null,
+                "emoji": "🛒",
+                "category": "1359156651327750295"
+            },
+            "Suporte": {
+                "predesc": "Motivo ?",
+                "desc": "Não Definido",
+                "banner": null,
+                "emoji": "🎫",
+                "category": "1359156633963462656"
+            },
+            "Parcerias": {
+                "predesc": "Motivo ?",
+                "desc": "Não Definido",
+                "banner": null,
+                "emoji": "🫱🏼‍🫲🏽",
+                "category": "1346235118347489361"
+            }
+        },
+        "button": true,
+        "messages": []
+    },
+    "pendingActions": {}
+}

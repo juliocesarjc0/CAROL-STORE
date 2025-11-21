@@ -1,27 +1,12 @@
-const {Client , GatewayIntentBits,Collection, Partials } = require("discord.js");
-console.clear()
+const { JsonDatabase } = require("wio.db");
+const { QuickDB } = require("quick.db");
+const { owner } = require("../config.json");
 
-const client = new Client({
-  intents: Object.keys(GatewayIntentBits),
-  partials: Object.keys(Partials)
-});
+const db = new JsonDatabase({ databasePath: "./database/general.json" });
+const tk = new QuickDB({ filePath: "./database/ticket.sqlite" });
 
-module.exports = client;
-client.slashCommands = new Collection();
-const {token} = require("./config.json");
-client.login(token);
-
-
-const evento = require("./handler/Events");
-evento.run(client);
-require("./handler/index")(client);
-
-
-
-process.on('unhandRejection', (reason, promise) => {
-  console.log(`🚫 Erro Detectado:\n\n` + reason, promise);
-});
-
-process.on('uncaughtException', (error, origin) => {
-  console.log(`🚫 Erro Detectado:\n\n` + error, origin);
-});
+module.exports = {
+    owner: process.env.OWNER_ID || owner,
+    db,
+    tk
+};
