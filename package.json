@@ -1,21 +1,24 @@
 {
-  "dependencies": {
-    "base-bot": "file:",
-    "better-sqlite3": "^12.4.1",
-    "discord.js": "^14.24.0",
-    "quick.db": "^9.1.7",
-    "sqlite3": "^5.1.7",
-    "wio.db": "^4.0.22"
-  },
-  "name": "base-bot",
-  "version": "1.0.0",
+  "name": "carol-store-bot",
+  "version": "1.2.0",
+  "description": "Bot de tickets para Discord - Carol Store",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "type": "commonjs"
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.4.1",
+    "discord-html-transcripts": "^3.2.0",
+    "discord.js": "^14.25.0",
+    "dotenv": "^16.3.1",
+    "quick.db": "^9.1.7",
+    "wio.db": "^4.0.22"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
 }
